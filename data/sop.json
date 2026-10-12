@@ -1,1 +1,202 @@
-[]
+[
+  {
+    "id": "hotel-salah-mapping",
+    "kategori": "hotel",
+    "judul": "Hotel Salah Mapping",
+    "tag": "hotel",
+    "tagLabel": "Hotel",
+    "templates": [
+      {
+        "label": "📧 Email Tahap A — Bujuk Stay",
+        "isi": "Dear Customer,\n\nThank you for reaching out to us.\n\nWe have looked into your booking and are currently conducting a recheck with our relevant partner team and the property itself.\n\nIn the meantime, we kindly suggest that you proceed with your current reservation at [Nama Hotel B], as our check indicates that this property is located close to [Nama Hotel A].\n\nWe truly appreciate your understanding, and please rest assured that we are taking this as feedback to improve our services moving forward.\n\nShould you have any further concerns, please do not hesitate to let us know.\n\nBest Regards,\nAirpaz Global Support"
+      },
+      {
+        "label": "📧 Email Tahap B — Beda Jauh",
+        "isi": "Dear Customer,\n\nThank you for contacting us.\n\nWe are currently conducting a thorough recheck with our relevant partner team and the property regarding this matter.\n\nWhile waiting for the update, should you decide to make a new booking elsewhere, kindly keep the receipt of your new payment and attach it to this email. This will serve as a reference for our further investigation.\n\nWe sincerely apologize for the inconvenience and appreciate your patience.\n\nBest Regards,\nAirpaz Global Support"
+      },
+      {
+        "label": "💬 Script Opening — Live Chat / Call",
+        "isi": "I truly understand your frustration, and I sincerely apologize for the inconvenience caused. Let me check this immediately with our relevant team and the property. I will keep you updated as soon as I have the result. Please allow me a moment to verify the details."
+      },
+      {
+        "label": "🚫 Menolak Janji",
+        "isi": "I genuinely wish I could confirm that right away, but I need to ensure all details are verified first. I will update you as soon as I have a confirmed resolution."
+      },
+      {
+        "label": "💬 Tahap A — Bujuk Stay (Chat)",
+        "isi": "Our check shows that your current reservation is at [Hotel B], which is located right next to [Hotel A]. We kindly suggest proceeding with this property while we finalize our recheck."
+      },
+      {
+        "label": "💬 Tahap B — Minta Book Baru (Chat)",
+        "isi": "While we are rechecking with our partner team, should you book another property, kindly keep the receipt and share it with us for our further investigation."
+      }
+    ],
+    "steps": [
+      "Respons segera begitu case masuk (chat/call/email).",
+      "Tanyakan hotel apa yang terbooked dan hotel apa yang seharusnya.",
+      "Cek di Google Maps jarak antara kedua hotel.",
+      "Tentukan Tahap A (≤200m) atau Tahap B (>200m / beda kota / negara).",
+      "Kirim email Zendesk sesuai tahap yang berlaku.",
+      "Eskalasi ke Slack #product-hotel-operational, tag Vera Benita.",
+      "Kumpulkan evidence: RCV, Booking ID, foto, receipt (jika Tahap B).",
+      "Lapor SPV/Leader jika ada keputusan kompensasi.",
+      "Update customer dengan hasil akhir."
+    ],
+    "dos": [
+      "Respons cepat begitu case masuk",
+      "Validasi jarak hotel sebelum menentukan Tahap A atau B",
+      "Simpan RCV, Booking ID, dan semua evidence",
+      "Eskalasi ke Slack #product-hotel-operational tag Vera Benita segera",
+      "Inform SPV/Leader kalau situasinya ragu atau customer nego",
+      "Follow-up Slack berkala kalau customer urgent",
+      "Gunakan bahasa Inggris, professional, corporate grade"
+    ],
+    "donts": [
+      "Jangan janji refund di awal percakapan",
+      "Jangan janji rebooking di awal percakapan",
+      "Jangan janji kompensasi di awal percakapan",
+      "Jangan bilang 'Don't worry, we will cover everything'",
+      "Jangan biarkan customer nunggu tanpa update",
+      "Jangan resolve sendiri tanpa approval SPV/Leader"
+    ]
+  },
+  {
+    "id": "hotel-unable-checkin",
+    "kategori": "hotel",
+    "judul": "Hotel Unable to Check-in",
+    "tag": "hotel",
+    "tagLabel": "Hotel",
+    "templates": [
+      {
+        "label": "💬 Opening — Menenangkan Customer",
+        "isi": "I truly understand how frustrating this must be, especially since you are already at the property. I sincerely apologize for this inconvenience. Let me check your booking details immediately and contact the relevant parties to resolve this as quickly as possible. Please allow me a moment."
+      },
+      {
+        "label": "💬 Tahap A — Advise Kontak Properti",
+        "isi": "Based on your booking details, the property requires guests to contact them prior to check-in. The contact number is [XXX]. Please call them first, as they will provide you with the QR code or specific check-in instructions. Once you have done so, please let me know if you encounter any further issues."
+      },
+      {
+        "label": "💬 Tahap A — CS Hubungi Properti",
+        "isi": "Hi, this is [Your Name] from Airpaz. We have a guest, [Customer Name], with booking reference [Booking ID / RCV], currently at your property and unable to check in. They mentioned [masalahnya: belum dapat QR / resepsionis kosong / etc]. Could you please assist them immediately? Thank you."
+      },
+      {
+        "label": "💬 Tahap B — Nomor Tidak Tertera",
+        "isi": "I see that the contact details are not available in your booking confirmation. I am reaching out to our partner team and the hotel team right now to get this resolved urgently. Please bear with me."
+      },
+      {
+        "label": "💬 Tahap C — Semua Tidak Respons",
+        "isi": "We are currently conducting an urgent recheck with our partner team and the property. While waiting for the update, if you need to secure a place to stay immediately, please feel free to make a new booking elsewhere. Kindly keep the receipt of your new payment and attach it to our email. This will help us with our further investigation."
+      },
+      {
+        "label": "💬 QR Code Invalid",
+        "isi": "I sincerely apologize that the QR code did not work. I am escalating this directly to our partner team and hotel team to resolve this immediately. Please do not worry — we are handling this on our end."
+      },
+      {
+        "label": "🚫 Menolak Janji",
+        "isi": "I genuinely wish I could confirm that right now, but I need to ensure all details are verified first. I will update you as soon as I have a confirmed resolution."
+      },
+      {
+        "label": "📧 Email Zendesk — Tahap C",
+        "isi": "Dear Customer,\n\nThank you for contacting us.\n\nWe sincerely apologize for the inconvenience caused regarding your check-in at [Property Name]. We are currently conducting an urgent recheck with our relevant partner team and the property itself.\n\nIn the meantime, if you have made a new booking elsewhere, kindly attach the receipt of your new payment to this email for our further investigation.\n\nTo assist us better, could you please share more details about your current situation at the property? For example:\n- Is there anyone present at the property? If yes, what is their name?\n- Could you share any photos or videos of the current situation?\n\nWe truly appreciate your patience, and we are treating this matter with utmost urgency.\n\nBest Regards,\nAirpaz Global Support"
+      }
+    ],
+    "steps": [
+      "Respons SEGERA — ini critical case, customer sudah di lokasi.",
+      "Validasi via itinerary + manage booking (RCV + Pin Code).",
+      "Tanyakan ke customer: sudah kontak properti atau belum?",
+      "Tentukan Tahap A / B / C berdasarkan ketersediaan nomor kontak di itinerary.",
+      "Tahap A (nomor tertera): advise customer kontak properti, atau CS hubungi langsung.",
+      "Tahap B (nomor tidak tertera): kontak Partner/B2B + up Slack #product-hotel-operational tag Vera Benita.",
+      "Tahap C (semua tidak respons): advise book hotel baru + simpan receipt + kirim Zendesk.",
+      "Lapor SPV/Leader untuk semua keputusan kompensasi.",
+      "Kirim Zendesk hanya jika case tidak selesai di chat/call.",
+      "Update customer hasil akhir."
+    ],
+    "dos": [
+      "Respons SEGERA — ini critical case",
+      "Validasi via itinerary + manage booking (RCV + Pin Code) dulu",
+      "Tanya ke customer: sudah kontak properti atau belum?",
+      "Kalau nomor tertera & belum kontak → advise kontak dulu",
+      "Kalau nomor tertera & sudah kendala → CS hubungi properti langsung",
+      "Kalau nomor tidak tertera → langsung Partner/B2B + Slack",
+      "Kalau QR invalid → langsung Partner/B2B + Slack (bukan suruh customer coba ulang)",
+      "Kalau semua tidak respons → advise book baru + simpan receipt + lapor SPV",
+      "Follow-up Slack berkala kalau customer mendesak",
+      "Gunakan bahasa Inggris, professional, corporate grade"
+    ],
+    "donts": [
+      "Jangan janji refund di awal percakapan",
+      "Jangan janji rebooking di awal percakapan",
+      "Jangan janji kompensasi di awal percakapan",
+      "Jangan salahkan customer ('You should have contacted them first')",
+      "Jangan biarkan customer nunggu tanpa update — kabari tiap 10-15 menit",
+      "Jangan resolve sendiri kalau ada kompensasi tanpa approval SPV/Leader",
+      "Jangan kirim Zendesk kalau case sudah solved di chat/call"
+    ]
+  },
+  {
+    "id": "refund-reverse",
+    "kategori": "refund",
+    "judul": "Refund Reverse Request",
+    "tag": "refund",
+    "tagLabel": "Refund",
+    "templates": [
+      {
+        "label": "💬 Opening / Validasi",
+        "isi": "Let me check your refund details and voucher status first. I will update you shortly."
+      },
+      {
+        "label": "💬 Convince Voucher (Fight dulu)",
+        "isi": "I understand your preference for a cash refund. However, the Airpaz Voucher you received is designed to make your next booking much easier and faster — you can use it for flights, hotels, or any other service on our platform, and it is valid for 12 months from the date of issuance.\n\nIf we proceed with a cash refund reversal, please note that:\n- The process will take significantly longer compared to using the voucher instantly\n- Once the reversal is initiated, your current voucher will no longer be valid\n- The timeline depends on your original payment method and may take up to [X days/months]\n\nWould you like to consider using the voucher for your upcoming travel plans instead? It is the quickest way to move forward."
+      },
+      {
+        "label": "📧 Kategori 1 & 3 — Feedback",
+        "isi": "Dear Customer,\n\nIf your refund is currently in the form of a voucher and you would like to convert it into a cash refund, please refer to the email you received regarding your refund voucher. At the bottom of the email, you will find a line that reads \"Submit a refund request to\" — please click the link provided there to proceed with your request.\n\nShould you have any questions or experience difficulty locating this information, our customer service team remains available to provide any necessary assistance.\n\nPlease note: If you choose to proceed with a cash refund by clicking the link \"Submit a refund requests to…\", your request will first be reviewed by our relevant team and higher management. All updates regarding the status of your request will be communicated via email, so we kindly ask that you check your email regularly.\n\nBest Regards,\nAirpaz Global Support"
+      },
+      {
+        "label": "📧 Kategori 2 — Zendesk (Back to Original Payment)",
+        "isi": "Dear Customer,\n\nPLEASE REPLY WITHIN 6 HOURS!\n\nWe acknowledge your preference for a cash refund to your original payment method; however, as stated in our terms and conditions (https://www.airpaz.com/en/terms/condition#sec_9), which you agreed to when submitting a refund request, it is clearly stated that refunds are processed in the form of a Voucher.\n\nShould you choose to proceed with a refund to your original payment method, please be aware that this process may take significantly longer — up to 7-14 working days. Additionally, please note that once the refund process is initiated, your Voucher will no longer be valid.\n\nIf you wish to proceed with the refund to your original payment method, kindly reply to this email with \"YES, I AGREE,\" and we will escalate your request to higher management for further consideration and processing.\n\nThank you for your understanding.\n\nRegards,\nAirpaz Global Support"
+      },
+      {
+        "label": "📧 Kategori 2 — Zendesk (Back via Bank Transfer)",
+        "isi": "Dear Customer,\n\nPLEASE REPLY WITHIN 6 HOURS!\n\nWe acknowledge your preference for a cash refund to your original payment method; however, as stated in our terms and conditions (https://www.airpaz.com/en/terms/condition#sec_9), which you agreed to when submitting a refund request, it is clearly stated that refunds are processed in the form of a Voucher.\n\nShould you choose to proceed with a cash refund (via Bank Transfer), please be aware that this process may take up to 7 working days. Additionally, please note that once the refund process is initiated, your Voucher will no longer be valid.\n\nIf you wish to proceed with the cash refund, kindly reply to this email by filling in the following information:\n- Account number (must belong to one of the passengers or the ordering customer):\n- Account holder name:\n- Bank name:\n- Bank branch (required for IDR currency refunds only):\n\nOnce we receive your details, we will escalate your request to higher management for further consideration and processing.\n\nThank you for your understanding.\n\nRegards,\nAirpaz Global Support"
+      },
+      {
+        "label": "📧 >180 Hari (Santai) — Tolak via Feedback",
+        "isi": "Dear Customer,\n\nWe regret to inform you that we are unable to process your refund in cash. This decision aligns with our system limitations and the policies outlined in our Terms and Conditions (Section 9), available at: https://www.airpaz.com/en/terms/condition#sec_9.\n\nAs stated in our policy, \"Airpaz will provide you with a voucher in the event of a successful refund. Vouchers cannot be redeemed for monetary funds and may only be used in accordance with the terms of the voucher.\"\n\nFurthermore, after reviewing this case with higher management, please note that cash refunds are only possible within 180 days from the initial booking date. Since your booking has exceeded this timeframe, it is unfortunately no longer eligible for a reversal.\n\nWe encourage you to use the voucher you have received for your next booking on our platform.\n\nWe sincerely appreciate your understanding and cooperation regarding this matter.\n\nRegards,\nAirpaz Global Support"
+      },
+      {
+        "label": "📧 >180 Hari (Ngomel) — Bisa Reverse 3-6 Bulan",
+        "isi": "Dear Customer,\n\nPLEASE REPLY WITHIN 6 HOURS!\n\nWe acknowledge your preference for a cash refund to your original payment method; however, as stated in our terms and conditions (https://www.airpaz.com/en/terms/condition#sec_9), which you agreed to when submitting a refund request, it is clearly stated that refunds are processed in the form of a Voucher.\n\nShould you choose to proceed with a refund to your original payment method, please be aware that this process may take significantly longer — up to 3-6 months. Additionally, please note that once the refund process is initiated, your Voucher will no longer be valid.\n\nIf you wish to proceed with the refund to your original payment method, kindly reply to this email with \"YES, I AGREE,\" and we will escalate your request to higher management for further consideration and processing.\n\nThank you for your understanding.\n\nRegards,\nAirpaz Global Support"
+      }
+    ],
+    "steps": [
+      "Respons segera — biasanya customer ini sudah komplain punya.",
+      "Validasi: cek refund exist? Type voucher benar? Masih aktif? Ada Zendesk history?",
+      "Cek payment method asli dan tentukan apakah OLD TRX (>180 hari).",
+      "Tentukan Kategori: 1 (Expired), 2 (Issued + AFS), atau 3 (Issued tanpa AFS).",
+      "Fight dulu untuk Kategori 2 & 3 — convince customer pakai voucher.",
+      "Kalau customer insist: Kategori 1 & 3 → Feedback; Kategori 2 → Zendesk.",
+      "Untuk >180 hari: customer santai → tolak via Feedback; customer ngomel → Zendesk 3-6 bulan.",
+      "Kalau Zendesk: assign Refundreverse, Category Refund, tambahkan 'PLEASE REPLY WITHIN 6 HOURS'.",
+      "Inform customer bahwa voucher akan invalid begitu reverse dimulai."
+    ],
+    "dos": [
+      "Validasi dulu sebelum kasih template — cek type voucher, aktif/tidak, OLD TRX atau tidak",
+      "Fight dulu untuk Kategori 2 & 3 — convince customer pakai voucher lebih cepat",
+      "Kirim Feedback untuk Kategori 1, Kategori 3 (setelah fight), dan >180 hari (santai)",
+      "Kirim Zendesk untuk Kategori 2 (insist), >180 hari (ngomel), dan bank details koreksi",
+      "Assign benar di Zendesk: Assignee = Refundreverse, Category = Refund",
+      "Tambahkan 'PLEASE REPLY WITHIN 6 HOURS' di Zendesk",
+      "Cek Zendesk history dulu — bisa jadi sudah ada thread sebelumnya",
+      "Gunakan bahasa Inggris, professional, corporate grade"
+    ],
+    "donts": [
+      "Jangan langsung janji cash refund tanpa validasi & fight dulu",
+      "Jangan kirim Zendesk untuk Kategori 1 atau Kategori 3 (sebelum fight)",
+      "Jangan lupa inform bahwa begitu reverse dimulai, voucher akan invalid",
+      "Jangan proses bank details yang tidak match policy",
+      "Jangan janji timeline pasti — selalu pakai 'up to X days/months'"
+    ]
+  }
+]
